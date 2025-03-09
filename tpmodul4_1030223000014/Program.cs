@@ -4,6 +4,10 @@
     {
         static void Main(string[] args)
         {
+            Console.Write("Masukkan nama kelurahan: ");
+            string kelurahan = Console.ReadLine();
+            string kodePos = KodePos.getKodePos(kelurahan);
+            Console.WriteLine($"Kode Pos {kelurahan}: {kodePos}");
         }
     }
 }
